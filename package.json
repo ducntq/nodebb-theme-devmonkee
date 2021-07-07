@@ -1,6 +1,6 @@
 {
     "name": "nodebb-theme-devmonkee",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Made for devmonkee.com",
     "main": "theme.less",
     "keywords": [],
