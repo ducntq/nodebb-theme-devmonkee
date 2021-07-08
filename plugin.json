@@ -2,9 +2,15 @@
 	"id": "nodebb-theme-devmonkee",
 	"hooks": [
 		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas",
-			"hook": "filter:topic.create", "method": "onTopicCreate",
-            "hook": "filter:privileges.topics.get", "method": "onGetTopicPrivSettings",
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
+        },
+        {
+			"hook": "filter:topic.create", "method": "onTopicCreate"
+        },
+        {
+            "hook": "filter:privileges.topics.get", "method": "onGetTopicPrivSettings"
+        },
+        {
             "hook": "static:api.routes", "method": "addRoutes"
 		}
 	],
