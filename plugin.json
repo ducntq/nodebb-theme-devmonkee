@@ -1,15 +1,16 @@
 {
 	"id": "nodebb-theme-devmonkee",
-	"library": "./lib/theme.js",
 	"hooks": [
 		{
-			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas"
+			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas",
+			"hook": "filter:topic.create", "method": "onTopicCreate",
+            "hook": "filter:privileges.topics.get", "method": "onGetTopicPrivSettings",
+            "hook": "static:api.routes", "method": "addRoutes"
 		}
 	],
 	"scripts": [
 		"public/client.js",
 		"../nodebb-theme-persona/public/persona.js",
-		"../nodebb-theme-persona/public/modules/autohidingnavbar.min.js",
 		"../nodebb-theme-persona/public/modules/quickreply.js"
 	],
 	"modules": {
