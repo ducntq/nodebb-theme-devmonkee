@@ -11,8 +11,11 @@
             "hook": "filter:privileges.topics.get", "method": "onGetTopicPrivSettings"
         },
         {
-            "hook": "static:api.routes", "method": "addRoutes"
-		}
+            "hook": "static:app.load", "method": "registerPage"
+        },
+        {
+            "hook": "filter:middleware.render", "method": "insertData"
+        }
 	],
 	"scripts": [
 		"public/client.js",
