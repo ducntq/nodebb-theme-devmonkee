@@ -10,10 +10,10 @@
 	<!-- ENDIF loggedIn -->
 	
 	{{{ if privileges.isAdmin }}}
-	<button component="topic/unmark-homepage" class="btn btn-sm btn-default {{{ if !is_homepage }}} hidden {{{ end }}} " title="Unstick on homepage">
+	<button data-tid="{tid}" component="topic/unmark-homepage" class="btn btn-sm btn-default {{{ if !is_homepage }}} hidden {{{ end }}} " title="Unstick on homepage">
                 <i class="fa fa-fw fa-toggle-on"></i><span class="visible-sm-inline visible-md-inline visible-lg-inline"></span>
         </button>
-	<button component="topic/mark-homepage" class="btn btn-sm btn-default {{{ if is_homepage }}} hidden {{{ end }}} " title="Stick on homepage">
+	<button data-tid="{tid}" component="topic/mark-homepage" class="btn btn-sm btn-default {{{ if is_homepage }}} hidden {{{ end }}} " title="Stick on homepage">
                 <i class="fa fa-fw fa-toggle-off"></i><span class="visible-sm-inline visible-md-inline visible-lg-inline"></span>
     </button>
 	{{{ end }}}
