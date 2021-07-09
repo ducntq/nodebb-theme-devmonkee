@@ -12,9 +12,6 @@
         },
         {
             "hook": "static:app.load", "method": "registerPage"
-        },
-        {
-            "hook": "filter:middleware.render", "method": "insertData"
         }
 	],
 	"scripts": [
